@@ -129,7 +129,7 @@ function createProductCard(product) {
 async function addProductsToPage() {
   const productList = document.querySelector(".list-product");
 
-  const { data } = await useFetch("https://be-jayapura-3-production.up.railway.app/api/products", {
+  const { data } = await useFetch("https://be-website-sepatu-production.up.railway.app/api/products", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

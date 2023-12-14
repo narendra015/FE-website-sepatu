@@ -116,7 +116,7 @@ async function addProductsToPage(data) {
 
 // Event listener untuk halaman telah dimuat sepenuhnya
 document.addEventListener("DOMContentLoaded", async function () {
-  const { data } = await useFetch("https://be-jayapura-3-production.up.railway.app/api/products", {
+  const { data } = await useFetch("https://be-website-sepatu-production.up.railway.app/api/products", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
