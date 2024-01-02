@@ -47,7 +47,7 @@ export function createProductCard(product) {
 
 formEdit.addEventListener("submit", async (event) => {
   event.preventDefault();
-  const { data } = await useFetch("https://be-website-sepatu.vercel.appapi/user", {
+  const { data } = await useFetch("https://be-website-sepatu.vercel.app/api/user", {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -66,7 +66,7 @@ formEdit.addEventListener("submit", async (event) => {
 });
 
 window.onload = async () => {
-  const { data } = await useFetch("https://be-website-sepatu.vercel.appapi/user", {
+  const { data } = await useFetch("https://be-website-sepatu.vercel.app/api/user", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

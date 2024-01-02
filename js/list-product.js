@@ -129,7 +129,7 @@ function createProductCard(product) {
 async function addProductsToPage() {
   const productList = document.querySelector(".list-product");
 
-  const { data } = await useFetch("https://be-website-sepatu.vercel.appapi/products", {
+  const { data } = await useFetch("https://be-website-sepatu.vercel.app/api/products", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
