@@ -172,7 +172,8 @@ form.sign-up-form{
 }
 
 .btn:hover{
-    background: #a5aaaf;
+    background: #fbcd17;
+    color: white;
 }
 
 .social-text{
