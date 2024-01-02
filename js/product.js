@@ -116,7 +116,7 @@ async function addProductsToPage(data) {
 
 // Event listener untuk halaman telah dimuat sepenuhnya
 document.addEventListener("DOMContentLoaded", async function () {
-  const { data } = await useFetch("https://be-website-sepatu-g4t6.vercel.app/api/products", {
+  const { data } = await useFetch("https://be-website-sepatu.vercel.appapi/products", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",

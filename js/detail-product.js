@@ -52,7 +52,7 @@ async function addToCart(product) {
   const size = document.getElementById("size").value;
   const quantity = document.getElementById("quantity").value;
 
-  const { data } = await useFetch("https://be-website-sepatu-g4t6.vercel.app/api/cart", {
+  const { data } = await useFetch("https://be-website-sepatu.vercel.appapi/cart", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -80,7 +80,7 @@ async function addToCart(product) {
 document.addEventListener("DOMContentLoaded", async function () {
   const { id } = getQueryParams();
 
-  const { data } = await useFetch(`https://be-website-sepatu-g4t6.vercel.app/api/products/${id}`, {
+  const { data } = await useFetch(`https://be-website-sepatu.vercel.appapi/products/${id}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
